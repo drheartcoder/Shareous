@@ -1,0 +1,183 @@
+/*!
+ * bootstrap-star-rating v4.0.2
+ * http://plugins.krajee.com/star-rating
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2014 - 2016, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-star-rating/blob/master/LICENSE.md
+ */
+.rating-loading {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    color: #fff;
+    background: transparent url('../images/loading.gif') top left no-repeat;
+    border: none;
+}
+
+/*
+ * Stars
+ */
+.rating-container .rating {
+    cursor: default;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+}
+
+.rating-disabled .rating {
+    cursor: not-allowed;
+}
+
+.rating-container .star {
+    display: inline-block;
+    margin: 0 6px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.no-paddi-add-review .starrr{margin: 0 -6px}
+
+.rating-container:nth-child(1) .filled-stars .star, .rating-container:nth-child(2) .filled-stars .star{color: #23a733}
+.rating-container:nth-child(3) .filled-stars .star, .rating-container:nth-child(4) .filled-stars .star{color: #ffad00}
+.rating-container:nth-child(5) .filled-stars .star{color: #ff4747}
+
+.rating-container .empty-stars {
+    color: #d4d4d4;
+}
+
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+     color: #e57f26;
+    white-space: nowrap;
+    overflow: hidden;
+   
+}
+
+.rating-rtl {
+    float: right;
+}
+
+.rating-animate .filled-stars {
+    transition: width 0.25s ease;
+    -o-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+}
+
+.rating-rtl .filled-stars {
+    left: auto;
+    right: 0;
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+}
+
+.rating-rtl.is-star .filled-stars {
+    right: 0.06em;
+}
+
+.rating-rtl.is-heart .empty-stars {
+    margin-right: 0.07em;
+}
+
+/**
+ * Sizes
+ */
+.rating-xl {
+    font-size: 4.89em;
+}
+
+.rating-lg {
+    font-size: 3.91em;
+}
+
+.rating-md {
+    font-size: 3.13em;
+    height: 23px;
+    margin-bottom: 11px;
+}
+
+.rating-sm {
+    font-size: 2.5em;
+}
+
+.rating-xs {
+    font-size: 2em;
+}
+
+.rating-xl {
+    font-size: 4.89em;
+}
+
+/**
+ * Clear
+ */
+.rating-container .clear-rating {
+    color: #aaa;
+    cursor: not-allowed;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:14px;
+}
+
+.clear-rating-active {
+    cursor: pointer !important;
+}
+
+.clear-rating-active:hover {
+    color: #843534;
+}
+
+.rating-container .clear-rating {
+    padding-right: 5px;
+}
+
+/**
+ * Caption
+ */
+.rating-container .caption {
+  color: #999;
+    font-size: 60%;
+    margin-top: -76px;
+    position: absolute;
+    left: 195px;
+    vertical-align: middle;
+}
+.clear-rating.clear-rating-active {
+    display: none;
+}
+.rating-container .caption {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.caption .label-default{   background:none;
+    color: #4c5c67;
+    font-size: 16px;
+    font-weight: normal;}
+.rating-rtl .caption {
+    margin-right: 5px;
+    margin-left: 0;
+}
+.caption .label-success  , .caption .label-primary , .caption .label-info , .caption .label-warning , .caption .label-danger
+{color: #4c5c67;background:none;
+  /*  font-family: "robotolight",sans-serif;*/
+    font-weight: normal;
+    font-size: 16px;}
+/**
+ * Print
+ */
+@media print {
+    .rating-container .clear-rating {
+        display: none;
+    }
+}

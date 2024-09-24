@@ -1,0 +1,17 @@
+ @if(Session::has('success'))
+    <div class="alert alert-success alert-dismissible">
+                             <div class="alert alert-success alert-dismissable fade in">
+                                        <span aria-hidden="true">&times;</span>
+        </button>
+        {{ Session::get('success') }}
+    </div>
+  @endif  
+
+  @if(Session::has('error'))
+    <div class="alert alert-danger alert-dismissible">
+                                    <div class="alert alert-success alert-dismissable fade in">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        {{ Session::get('error') }}
+    </div>
+  @endif

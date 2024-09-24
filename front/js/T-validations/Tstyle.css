@@ -1,0 +1,102 @@
+body {
+background:#fff;
+}
+
+p {
+margin-bottom:20px;
+}
+
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+    padding:0px 12px;
+    margin-top: 20px;
+}
+
+.testimonial-main-block .nbs-flexisel-container{padding: 0 12px;}
+
+
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;    
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+/*    cursor:pointer;*/
+    position:relative;
+}
+
+
+.product-one-main{position: relative; overflow: hidden;}
+.product-img-block{text-align: center; overflow: hidden; /*z-index: 9999;*/ position: relative;}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 28px;
+    height:43px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.nbs-flexisel-nav-left {
+    left: -18px;
+    background: url(../images/slider-left-arrow.png) no-repeat;
+	
+}
+
+.nbs-flexisel-nav-right {
+    right: -18px;
+    background: url(../images/slider-right-arrow.png) no-repeat;
+	
+}
+
+.testimonial-main-block .nbs-flexisel-nav-left {
+    left: -18px;
+    background: url(../images/slider-left-arrow.png) no-repeat;
+	 margin-top: 20px
+}
+
+.testimonial-main-block .nbs-flexisel-nav-right {
+    right: -18px;
+    background: url(../images/slider-right-arrow.png) no-repeat;
+	margin-top: 20px
+}
+
+
+.doct-gray-main-block .nbs-flexisel-nav-left {left: -28px;}
+.doct-gray-main-block .nbs-flexisel-nav-right {right: -28px;}
+
+@media all and (max-width:767px){
+  .doct-gray-main-block .nbs-flexisel-nav-left {left: -18px;}
+.doct-gray-main-block .nbs-flexisel-nav-right {right: -18px;}  
+}
+
+
+.wrapDiv {clear: both;color: #FF0000; font-weight: normal;display: block;width: 100%;text-align: left; margin-top: 0px; }
+.col-lg-6 {height: 63px !important;}

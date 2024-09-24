@@ -1,0 +1,47 @@
+
+.prod-pagination {margin: 30px 0 45px;}
+.text-center{ text-align: center; }
+ul.pagination {margin: 0; padding: 0;}
+.pagination li {display: inline-block; margin-right: 7px; margin-bottom: 5px;}	
+.pagination .active span {color: #fff; border: 1px solid #ff4747 !important; background-color: #ff4747 !important;}
+.pagination>li>a, .pagination>li>span{width: 30px;height: 30px; border-radius: 3px;line-height: 30px; font-size: 14px; text-align: center; font-family: 'heebomedium', sans-serif; display: block; color: #3c484c; border: 1px solid #afb4b5; padding: 0px; margin: 0px;}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {z-index: 2;color: #fff; border: 1px solid #ff4747;background-color: #ff4747;}
+.pagination-arrows-set ul li:first-child span, .pagination-arrows-set ul li:last-child a{line-height: 27px;}
+
+.alert-dismissable .close, .alert-dismissible .close {padding-right: 10px!important; color: #3c763d!important;}
+
+.error{ color: red; }
+.error.my-bottom{bottom: 10px}
+
+/*css related thumbnail of multiple images of property file*/
+input[type="file"] {
+  display: block;
+}
+.propertyImageThumb {
+  max-height: 100px;
+  border: 2px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.PropertyRemove {
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.PropertyRemove:hover {
+  background: white;
+  color: black;
+}
+
+
+.add-fav {
+  background-color: #ff4747!important;
+  color: #fff!important;
+  }
