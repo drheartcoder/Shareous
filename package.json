@@ -10,6 +10,6 @@
     "bootstrap-sass": "^3.0.0"
   },
   "dependencies": {
-    "firebaseui": "^3.0.0"
+    "firebaseui": "^3.6.1"
   }
 }
